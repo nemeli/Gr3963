@@ -7,5 +7,5 @@ if (Mline!=null)
 {
     int M =int.Parse(Mline);
    
-    Console.Write(M%10);
+    Console.Write(M%10);// последняя цифра числа
 }
