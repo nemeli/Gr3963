@@ -1,8 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// является ли первое число квадтом второго
 Console.WriteLine("write number");
-string numLine1 = Console.ReadLine();
+string? numLine1 = Console.ReadLine();
 
-string numLine2 = Console.ReadLine();
+string? numLine2 = Console.ReadLine();
 
 if (numLine1 != null && numLine2 != null) ;
 {
