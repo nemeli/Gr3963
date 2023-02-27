@@ -11,7 +11,9 @@ void PrintData(string msg, double val)
     Console.WriteLine(msg+val);
 }
 
+// int X1= ReadData("Введите координату первой точки Х :");
+// PrintData("cumm",res2);
 
-
-int X1= ReadData("Введите координату первой точки Х :");
-PrintData("cumm",res2);
+// проверка скорости программы
+DateTime d2=DateTime.Now;
+Console.WriteLine(DateTime.Now-d2);

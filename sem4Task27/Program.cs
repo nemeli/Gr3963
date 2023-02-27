@@ -36,11 +36,15 @@ int SumStr(string str)
 }
 
 
-// int num=ReadData("Напишите число");
-// int sum=SumNum(num);
-// PrintData("Сумма цифр в числе: ",sum);
+int num=ReadData("Напишите число");
+DateTime d2=DateTime.Now;
+int sum=SumNum(num);
+Console.WriteLine(DateTime.Now-d2);
+PrintData("Сумма цифр в числе: ",sum);
 
 Console.WriteLine("напишите второе число");
 string str=Console.ReadLine();
+d2=DateTime.Now;
 int sum2=SumStr(str);
+Console.WriteLine(DateTime.Now-d2);
 PrintData("Сумма цифр в числе: ",sum2);
