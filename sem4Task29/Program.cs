@@ -50,3 +50,4 @@ Dictionary <int,string> name = new Dictionary <int,string>()
 
 int rand=new Random().Next(1,4);
 Console.WriteLine(name [rand]);
+

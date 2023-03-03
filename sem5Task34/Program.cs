@@ -1,57 +1,4 @@
-﻿// //метод читает данные от пользователя
-// int  ReadData(string msg)
-// {
-//     Console.WriteLine(msg);
-//     return int.Parse(Console.ReadLine()??"0");
-// }
-
-// // метод выводит данные пользователю
-// void PrintData(string msg, double val)
-// {
-//     Console.WriteLine(msg+val);
-// }
-
-// // int X1= ReadData("Введите координату первой точки Х :");
-// // PrintData("cumm",res2);
-
-// // проверка скорости программы
-// DateTime d2=DateTime.Now;
-// Console.WriteLine(DateTime.Now-d2);
-
-// //метод генерации массива
-// int[] Gen1DArr(int len,int min,int max)
-// {
-//     //блок корректировки входа данных
-//     if(min>max)
-//     {
-//         int buf=min;
-//         min=max;
-//         max=buf;
-//     }
-    
-//     int[] arr=new int[len];
-//     for(int i=0;i<len;i++)
-//     {
-//         arr[i]=new Random().Next(min,max+1);
-//     }
-//     return arr;
-// } 
-
-// void Print1DArr(int[] arr)
-// {
-//     Console.Write("[");
-//     for(int i=0;i<arr.LongLength-1;i++)
-//     {
-   
-//         Console.Write($"{arr[i]},");
-//     }
-//     Console.WriteLine($"{arr[arr.LongLength-1]}]");
-    
-// }
-// // создать пустую строку
-// string res=String.Empty;
-
-//метод генерации массива
+﻿//метод генерации массива
 int[] Gen1DArr(int len,int min,int max)
 {
     //блок корректировки входа данных
@@ -109,7 +56,7 @@ void CountSort(int[] mas,int min,int max)
     for(int i=0;i<mas.Length;i++)
     {
         test[mas[i]]+=1;
-        
+       
     }
     
     for(int j=min;j<test.Length;j++)
@@ -121,9 +68,7 @@ void CountSort(int[] mas,int min,int max)
             test[j]-=1;
         }
     }
-// && ind<mas.Length-1
 }
-
 int min=ReadData("напишите минимальное значение массива");
 int max=ReadData("напишите максимальное значение массива");
 int len=ReadData("напишите длинну массива");
@@ -132,7 +77,7 @@ int[] mas=Gen1DArr(len,min,max);
 DateTime d1=DateTime.Now;
 Bubble(mas);
 Console.WriteLine(DateTime.Now-d1);
-//  Print1DArr(mas);
+  Print1DArr(mas);
 DateTime d2=DateTime.Now;
 CountSort(mas,min,max);
 Console.WriteLine(DateTime.Now-d2);
