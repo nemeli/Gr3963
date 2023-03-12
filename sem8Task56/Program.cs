@@ -59,7 +59,7 @@ int[] SumLines( int[,] mas)
 int MinInd (int[] sumMas)
 {
     
-    int ind=-1;
+    int ind=0;
     int min=sumMas[0];
     for(int i=0;i<sumMas.Length;i++)
     {
